@@ -1,0 +1,75 @@
+﻿@page
+@model IndexModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject IViewLocalizer Localizer
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+<h2>@Localizer["Taxi Rides"]</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>@Localizer["Medallion"]</th>
+            <th>@Localizer["Hash License"]</th>
+            <th>@Localizer["Pickup Time"]</th>
+            <th>@Localizer["Drop Off Time"]</th>
+            <th>@Localizer["Duration"]</th>
+            <th>@Localizer["Distance"]</th>
+            <th>@Localizer["Pickup Longitude"]</th>
+            <th>@Localizer["Pickup Latitude"]</th>
+            <th>@Localizer["Dropoff Longitude"]</th>
+            <th>@Localizer["Dropoff Latitude"]</th>
+            <th>@Localizer["Payment Type"]</th>
+            <th>@Localizer["Fare Amount"]</th>
+            <th>@Localizer["Surcharge"]</th>
+            <th>@Localizer["Tax"]</th>
+            <th>@Localizer["Tip Amount"]</th>
+            <th>@Localizer["Tolls Amount"]</th>
+            <th>@Localizer["Total Amount"]</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Rides)
+        {
+            <tr>
+                <td>@item.medallion</td>
+                <td>@item.hashLicense</td>
+                <td>@item.pickupTime.ToString("g", CultureInfo.CurrentCulture)</td>
+                <td>@item.dropOffTime.ToString("g", CultureInfo.CurrentCulture)</td>
+                <td>@item.duration</td>
+                <td>@item.distance</td>
+                <td>@item.pLongitude</td>
+                <td>@item.pLatitude</td>
+                <td>@item.dLongitude</td>
+                <td>@item.dLatitude</td>
+                <td>@item.paymentType</td>
+                <td>@item.fareAmount.ToString("C", CultureInfo.CurrentCulture)</td>
+                <td>@item.surcharge.ToString("C", CultureInfo.CurrentCulture)</td>
+                <td>@item.tax.ToString("C", CultureInfo.CurrentCulture)</td>
+                <td>@item.tipAmount.ToString("C", CultureInfo.CurrentCulture)</td>
+                <td>@item.tollsAmount.ToString("C", CultureInfo.CurrentCulture)</td>
+                <td>@item.totalAmount.ToString("C", CultureInfo.CurrentCulture)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    @for (int i = 1; i <= Model.TotalPages; i++)
+    {
+        <a asp-page="/Index" asp-route-page="@i" asp-route-culture="@Model.culture">@i</a>
+        @:
+    }
+</div>
+
+<form method="post" action="/Culture/SetCulture">
+    <select name="culture" onchange="this.form.submit()">
+        <option value="mk" selected="@(CultureInfo.CurrentCulture.Name == "mk-MK" ? "selected" : null)">Македонски</option>
+        <option value="en" selected="@(CultureInfo.CurrentCulture.Name == "en-US" ? "selected" : null)">English</option>
+    </select>
+    <input type="hidden" name="returnUrl" value="@HttpContextAccessor.HttpContext?.Request?.Path" />
+</form>
+
+
+

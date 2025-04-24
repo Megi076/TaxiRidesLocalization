@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value>
+	</resheader>
+
+	<!-- Columns present in the model -->
+	<data name="Medallion" xml:space="preserve">
+        <value>Medallion Number</value>
+    </data>
+	<data name="HashLicense" xml:space="preserve">
+        <value>License Hash</value>
+    </data>
+	<data name="PickupTime" xml:space="preserve">
+        <value>Pickup Time</value>
+    </data>
+	<data name="DropOffTime" xml:space="preserve">
+        <value>Drop Off Time</value>
+    </data>
+	<data name="Duration" xml:space="preserve">
+        <value>Duration (in seconds)</value>
+    </data>
+	<data name="Distance" xml:space="preserve">
+        <value>Distance (in miles)</value>
+    </data>
+	<data name="PLongitude" xml:space="preserve">
+        <value>Pickup Longitude</value>
+    </data>
+	<data name="PLatitude" xml:space="preserve">
+        <value>Pickup Latitude</value>
+    </data>
+	<data name="DLongitude" xml:space="preserve">
+        <value>Drop Off Longitude</value>
+    </data>
+	<data name="DLatitude" xml:space="preserve">
+        <value>Drop Off Latitude</value>
+    </data>
+	<data name="PaymentType" xml:space="preserve">
+        <value>Payment Type</value>
+    </data>
+	<data name="FareAmount" xml:space="preserve">
+        <value>Base Fare (in USD)</value>
+    </data>
+	<data name="Surcharge" xml:space="preserve">
+        <value>Surcharge (in USD)</value>
+    </data>
+	<data name="Tax" xml:space="preserve">
+        <value>Tax (in USD)</value>
+    </data>
+	<data name="TipAmount" xml:space="preserve">
+        <value>Tip (in USD)</value>
+    </data>
+	<data name="TollsAmount" xml:space="preserve">
+        <value>Tolls (in USD)</value>
+    </data>
+	<data name="TotalAmount" xml:space="preserve">
+        <value>Total Amount (in USD)</value>
+    </data>
+
+	<!-- Additional translations for UI elements -->
+	<data name="Home" xml:space="preserve">
+        <value>Home</value>
+    </data>
+	<data name="Privacy" xml:space="preserve">
+        <value>Privacy</value>
+    </data>
+	<data name="Toggle navigation" xml:space="preserve">
+        <value>Toggle Navigation</value>
+    </data>
+	<data name="TaxiRidesLocalization" xml:space="preserve">
+        <value>Taxi Rides Localization</value>
+    </data>
+</root>

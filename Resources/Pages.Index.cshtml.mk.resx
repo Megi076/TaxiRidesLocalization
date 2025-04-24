@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value>
+	</resheader>
+
+	<!-- Columns present in the model -->
+	<data name="Medallion" xml:space="preserve">
+        <value>Број на лиценцата</value>
+    </data>
+	<data name="HashLicense" xml:space="preserve">
+        <value>Хеш од лицето + лиценцата</value>
+    </data>
+	<data name="PickupTime" xml:space="preserve">
+        <value>Време на подигнување</value>
+    </data>
+	<data name="DropOffTime" xml:space="preserve">
+        <value>Време на симнување</value>
+    </data>
+	<data name="Duration" xml:space="preserve">
+        <value>Времетраење (во секунди)</value>
+    </data>
+	<data name="Distance" xml:space="preserve">
+        <value>Растојание (во милји)</value>
+    </data>
+	<data name="PLongitude" xml:space="preserve">
+        <value>Географска должина на појдовната точка</value>
+    </data>
+	<data name="PLatitude" xml:space="preserve">
+        <value>Географска ширина на појдовната точка</value>
+    </data>
+	<data name="DLongitude" xml:space="preserve">
+        <value>Географска должина на дојдовната точка</value>
+    </data>
+	<data name="DLatitude" xml:space="preserve">
+        <value>Географска ширина на дојдовната точка</value>
+    </data>
+	<data name="PaymentType" xml:space="preserve">
+        <value>Тип на плаќање</value>
+    </data>
+	<data name="FareAmount" xml:space="preserve">
+        <value>Основна цена (во USD)</value>
+    </data>
+	<data name="Surcharge" xml:space="preserve">
+        <value>Доплата (во USD)</value>
+    </data>
+	<data name="Tax" xml:space="preserve">
+        <value>Данок (во USD)</value>
+    </data>
+	<data name="TipAmount" xml:space="preserve">
+        <value>Бакшиш (во USD)</value>
+    </data>
+	<data name="TollsAmount" xml:space="preserve">
+        <value>Такси за патишта (во USD)</value>
+    </data>
+	<data name="TotalAmount" xml:space="preserve">
+        <value>Вкупен износ (во USD)</value>
+    </data>
+
+	<!-- Additional translations for UI elements -->
+	<data name="Home" xml:space="preserve">
+        <value>Дома</value>
+    </data>
+	<data name="Privacy" xml:space="preserve">
+        <value>Приватност</value>
+    </data>
+	<data name="Toggle navigation" xml:space="preserve">
+        <value>Тоглај навигација</value>
+    </data>
+	<data name="TaxiRidesLocalization" xml:space="preserve">
+        <value>Такси Возења Локализација</value>
+    </data>
+</root>
+
